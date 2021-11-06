@@ -52,11 +52,15 @@ const Visa = styled.img`
 
 const Earth = styled.img`
   position: absolute;
-  height: 23rem;
-  width: 30rem;
+  height: 360px;
+  width: 30em;
   top: 10rem;
   left: 31%;
   z-index: 1;
+`;
+
+const EarthContainer = styled.div`
+  width: 100%;
 `;
 
 const Heading = styled.h1`
@@ -101,7 +105,9 @@ export default function Header() {
         measured by time-to-finality, and has the most validators securing its
         activity of any proof-of-stake protocol.
       </InfoText>
-      <Earth src={earth} alt="earth" />
+      <EarthContainer>
+        <Earth src={earth} alt="earth" />
+      </EarthContainer>
       <Bar>
         <Partners src={binance} alt="binance" />
         <Partners src={coinbase} alt="coinbase" />
