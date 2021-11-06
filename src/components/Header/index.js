@@ -53,15 +53,16 @@ const Visa = styled.img`
 const Earth = styled.img`
   position: absolute;
   height: 23rem;
+  width: 30rem;
   top: 10rem;
-  left: 23rem;
+  left: 31%;
   z-index: 1;
 `;
 
 const Heading = styled.h1`
   position: absolute;
   top: 5rem;
-  left: 19rem;
+  left: 26%;
   color: white;
   font-family: Gordita;
   font-style: normal;
@@ -77,7 +78,7 @@ const Heading = styled.h1`
 const InfoText = styled.p`
   position: absolute;
   top: 15rem;
-  left: 28rem;
+  left: 36%;
   font-family: Gordita;
   font-style: normal;
   font-weight: normal;
