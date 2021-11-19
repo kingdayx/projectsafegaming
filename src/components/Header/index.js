@@ -81,7 +81,7 @@ const Earth = styled.img`
   @media (max-width: 465px) {
     left: ${isMobile ? 0 : "8%"};
     height: 18rem;
-    width: 21rem;
+    width: 100%;
   }
 `;
 
@@ -107,7 +107,7 @@ const Heading = styled.h1`
     top: 5rem;
     left: 7.5%;
     font-size: 40px;
-    width: ${isMobile ? "15rem" : "20rem"};
+    width: ${isMobile ? "18rem" : "20rem"};
   }
 `;
 
@@ -126,7 +126,7 @@ const InfoText = styled.p`
   color: #dbe5bf;
   @media (max-width: 465px) {
     top: ${isMobile ? "25rem" : "17rem"};
-    left: 2%;
+    left: 3%;
     width: 22rem;
   }
 `;
