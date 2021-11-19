@@ -8,6 +8,7 @@ import huobi from "../../assets/huobi.png";
 import okex from "../../assets/okex.png";
 import visa from "../../assets/visa.png";
 import eclipse1 from "../../assets/Ellipse1.png";
+import { isMobile } from "react-device-detect";
 
 const HeaderContainer = styled.div`
   background: #0f0d18;
@@ -17,7 +18,7 @@ const HeaderContainer = styled.div`
 const Rainbow = styled.img`
   height: 30rem;
   width: 35rem;
-  @media (max-width: 450px) {
+  @media (max-width: 465px) {
     height: 20rem;
     width: 10rem;
   }
@@ -28,7 +29,7 @@ const Eclipse = styled.img`
   top: 0;
   right: 0;
   height: 34rem;
-  @media (max-width: 450px) {
+  @media (max-width: 465px) {
     right: 0rem;
     height: 15rem;
     width: 10;
@@ -44,7 +45,7 @@ const Bar = styled.div`
   justify-content: space-between;
   align-items: center;
   background: #0f0d18;
-  @media (max-width: 450px) {
+  @media (max-width: 465px) {
     left: 0;
     flex-wrap: wrap;
     text-align: center;
@@ -55,7 +56,7 @@ const Partners = styled.img`
   height: 1rem;
   padding: 0 3rem 0 3rem;
   background: #0f0d18;
-  @media (max-width: 450px) {
+  @media (max-width: 465px) {
     padding: 0.5rem;
   }
 `;
@@ -65,7 +66,7 @@ const Visa = styled.img`
   padding: 0 3rem 0 3rem;
   align-items: center;
   background: #0f0d18;
-  @media (max-width: 450px) {
+  @media (max-width: 465px) {
     padding: 0.5rem;
   }
 `;
@@ -77,7 +78,7 @@ const Earth = styled.img`
   top: 10rem;
   left: 31%;
   z-index: 1;
-  @media (max-width: 450px) {
+  @media (max-width: 465px) {
     left: 8%;
     height: 18rem;
     width: 21rem;
@@ -102,7 +103,7 @@ const Heading = styled.h1`
   z-index: 2;
   width: 40rem;
   text-align: center;
-  @media (max-width: 450px) {
+  @media (max-width: 465px) {
     top: 5rem;
     left: 7.5%;
     font-size: 40px;
@@ -123,14 +124,15 @@ const InfoText = styled.p`
   z-index: 2;
   width: 25rem;
   color: #dbe5bf;
-  @media (max-width: 450px) {
-    top: 17rem;
+  @media (max-width: 465px) {
+    top: ${isMobile ? "25rem" : "17rem"};
     left: 2%;
     width: 22rem;
   }
 `;
 
-export default function Header() {
+export default function Header(props) {
+  // const [mobile, setMobile] =
   return (
     <HeaderContainer>
       <Rainbow src={rainbow} alt="rainbow" />
