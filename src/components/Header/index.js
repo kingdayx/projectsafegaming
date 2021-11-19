@@ -17,6 +17,10 @@ const HeaderContainer = styled.div`
 const Rainbow = styled.img`
   height: 30rem;
   width: 35rem;
+  @media (max-width: 465px) {
+    height: 25rem;
+    width: 15rem;
+  }
 `;
 
 const Eclipse = styled.img`
@@ -24,23 +28,34 @@ const Eclipse = styled.img`
   top: 0;
   right: 0;
   height: 34rem;
+  @media (max-width: 465px) {
+    right: 0rem;
+    height: 15rem;
+    width: 10;
+  }
 `;
 
 const Bar = styled.div`
   position: absolute;
   display: flex;
   top: 35rem;
-  left: 15rem;
+  left: 19rem;
   max-height: 0.1rem;
   justify-content: space-between;
   align-items: center;
   background: #0f0d18;
+  @media (max-width: 465px) {
+    left: 5%;
+  }
 `;
 
 const Partners = styled.img`
   height: 1rem;
   padding: 0 3rem 0 3rem;
   background: #0f0d18;
+  @media (max-width: 465px) {
+    padding: 0.5rem;
+  }
 `;
 
 const Visa = styled.img`
@@ -48,6 +63,9 @@ const Visa = styled.img`
   padding: 0 3rem 0 3rem;
   align-items: center;
   background: #0f0d18;
+  @media (max-width: 465px) {
+    padding: 0.5rem;
+  }
 `;
 
 const Earth = styled.img`
@@ -57,6 +75,11 @@ const Earth = styled.img`
   top: 10rem;
   left: 31%;
   z-index: 1;
+  @media (max-width: 465px) {
+    left: 8%;
+    height: 20rem;
+    width: 25rem;
+  }
 `;
 
 const EarthContainer = styled.div`
@@ -77,6 +100,12 @@ const Heading = styled.h1`
   z-index: 2;
   width: 40rem;
   text-align: center;
+  @media (max-width: 465px) {
+    top: 5rem;
+    left: 15%;
+    font-size: 40px;
+    width: 20rem;
+  }
 `;
 
 const InfoText = styled.p`
@@ -92,6 +121,10 @@ const InfoText = styled.p`
   z-index: 2;
   width: 25rem;
   color: #dbe5bf;
+  @media (max-width: 465px) {
+    top: 17rem;
+    left: 6%;
+  }
 `;
 
 export default function Header() {
@@ -115,6 +148,18 @@ export default function Header() {
         <Partners src={okex} alt="okex" />
         <Partners src={huobi} alt="binance" />
       </Bar>
+      <svg
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M12 4C11.4477 4 11 4.44772 11 5V11H5C4.44772 11 4 11.4477 4 12C4 12.5523 4.44772 13 5 13H11V19C11 19.5523 11.4477 20 12 20C12.5523 20 13 19.5523 13 19V13H19C19.5523 13 20 12.5523 20 12C20 11.4477 19.5523 11 19 11H13V5C13 4.44772 12.5523 4 12 4Z"
+          fill="currentColor"
+        />
+      </svg>
     </HeaderContainer>
   );
 }

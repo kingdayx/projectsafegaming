@@ -6,6 +6,9 @@ const NavbarContainer = styled.div`
   justify-content: center;
   align-items: center;
   position: absolute;
+  @media (max-width: 465px) {
+    display: none;
+  }
 `;
 
 const NavLinks = styled.ul`
@@ -17,14 +20,15 @@ const NavLinks = styled.ul`
 const NavLink = styled.li`
   text-decoration: none;
   position: relative;
-  left: 30rem;
+  left: 40rem;
   font-family: Gordita;
   font-style: normal;
   font-weight: normal;
-  font-size: 16px;
+  font-size: 20px;
   line-height: 23px;
   color: gray;
-  padding: 0px 1rem 0px 1rem;
+  padding: 5px 1rem 0px 1rem;
+  cursor: pointer;
 `;
 
 export default function Navbar() {
