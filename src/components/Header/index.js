@@ -79,7 +79,7 @@ const Earth = styled.img`
   left: 31%;
   z-index: 1;
   @media (max-width: 465px) {
-    left: 8%;
+    left: ${isMobile ? 0 : "8%"};
     height: 18rem;
     width: 21rem;
   }
@@ -107,7 +107,7 @@ const Heading = styled.h1`
     top: 5rem;
     left: 7.5%;
     font-size: 40px;
-    width: 20rem;
+    width: ${isMobile ? "15rem" : "20rem"};
   }
 `;
 
