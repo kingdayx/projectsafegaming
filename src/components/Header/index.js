@@ -54,6 +54,9 @@ const Bar = styled.div`
     flex-wrap: wrap;
     text-align: center;
   }
+  @media (min-width: 1080px) {
+    top: 40rem;
+  }
 `;
 
 const Partners = styled.img`
@@ -118,6 +121,9 @@ const Heading = styled.h1`
     width: ${isMobile ? "21rem" : "20rem"};
     text-align: center;
   }
+  @media (min-width: 1080px) {
+    left: 27.5%;
+  }
 `;
 
 const InfoText = styled.p`
@@ -137,6 +143,9 @@ const InfoText = styled.p`
     top: ${isMobile ? "25rem" : "17rem"};
     left: 3%;
     width: 22rem;
+  }
+  @media (min-width: 1080px) {
+    left: 36%;
   }
 `;
 
