@@ -22,6 +22,10 @@ const Rainbow = styled.img`
     height: 20rem;
     width: 10rem;
   }
+  @media (min-width: 1080px) {
+    height: 21rem;
+    width: 45rem;
+  }
 `;
 
 const Eclipse = styled.img`
@@ -83,6 +87,10 @@ const Earth = styled.img`
     height: 18rem;
     width: 100%;
   }
+  @media (min-width: 1080px) {
+    height: 25rem;
+    width: 35rem;
+  }
 `;
 
 const EarthContainer = styled.div`
@@ -115,7 +123,7 @@ const Heading = styled.h1`
 const InfoText = styled.p`
   position: absolute;
   top: 15rem;
-  left: 36%;
+  left: 34%;
   font-family: Gordita;
   font-style: normal;
   font-weight: normal;
