@@ -79,7 +79,7 @@ const Earth = styled.img`
   left: 31%;
   z-index: 1;
   @media (max-width: 465px) {
-    left: ${isMobile ? 0 : "8%"};
+    left: ${isMobile ? "5%" : "8%"};
     height: 18rem;
     width: 25rem;
   }
