@@ -17,9 +17,9 @@ const HeaderContainer = styled.div`
 const Rainbow = styled.img`
   height: 30rem;
   width: 35rem;
-  @media (max-width: 465px) {
-    height: 25rem;
-    width: 15rem;
+  @media (max-width: 380px) {
+    height: 20rem;
+    width: 10rem;
   }
 `;
 
@@ -28,7 +28,7 @@ const Eclipse = styled.img`
   top: 0;
   right: 0;
   height: 34rem;
-  @media (max-width: 465px) {
+  @media (max-width: 380px) {
     right: 0rem;
     height: 15rem;
     width: 10;
@@ -44,8 +44,10 @@ const Bar = styled.div`
   justify-content: space-between;
   align-items: center;
   background: #0f0d18;
-  @media (max-width: 465px) {
-    left: 5%;
+  @media (max-width: 380px) {
+    left: 0;
+    flex-wrap: wrap;
+    text-align: center;
   }
 `;
 
@@ -53,7 +55,7 @@ const Partners = styled.img`
   height: 1rem;
   padding: 0 3rem 0 3rem;
   background: #0f0d18;
-  @media (max-width: 465px) {
+  @media (max-width: 380px) {
     padding: 0.5rem;
   }
 `;
@@ -63,7 +65,7 @@ const Visa = styled.img`
   padding: 0 3rem 0 3rem;
   align-items: center;
   background: #0f0d18;
-  @media (max-width: 465px) {
+  @media (max-width: 380px) {
     padding: 0.5rem;
   }
 `;
@@ -75,10 +77,10 @@ const Earth = styled.img`
   top: 10rem;
   left: 31%;
   z-index: 1;
-  @media (max-width: 465px) {
+  @media (max-width: 380px) {
     left: 8%;
-    height: 20rem;
-    width: 25rem;
+    height: 18rem;
+    width: 21rem;
   }
 `;
 
@@ -100,9 +102,9 @@ const Heading = styled.h1`
   z-index: 2;
   width: 40rem;
   text-align: center;
-  @media (max-width: 465px) {
+  @media (max-width: 380px) {
     top: 5rem;
-    left: 15%;
+    left: 7.5%;
     font-size: 40px;
     width: 20rem;
   }
@@ -121,9 +123,10 @@ const InfoText = styled.p`
   z-index: 2;
   width: 25rem;
   color: #dbe5bf;
-  @media (max-width: 465px) {
+  @media (max-width: 380px) {
     top: 17rem;
-    left: 6%;
+    left: 2%;
+    width: 22rem;
   }
 `;
 
