@@ -81,7 +81,7 @@ const Earth = styled.img`
   @media (max-width: 465px) {
     left: ${isMobile ? 0 : "8%"};
     height: 18rem;
-    width: 100%;
+    width: 25rem;
   }
 `;
 
